@@ -3,19 +3,17 @@ import ShowData from "./components/ShowData";
 import StaffPage from "./components/StaffPage";
 import Navigation from "./components/Navigation";
 import NoPage from "./components/NoPage";
-import StaffPage1 from "./components/temp";
-
+import StaffDashboard from "./components/StaffDashboard";
 
 function App() {
   return (
     <>
-
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigation />}>
             <Route path="orders" element={<ShowData />} />
             <Route path="staff" element={<StaffPage />} />
-            <Route path="temp" element={<StaffPage1 />} />
+            <Route path="staffdashboard" element={<StaffDashboard />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
@@ -24,6 +22,3 @@ function App() {
   );
 }
 export default App;
-
-
-
